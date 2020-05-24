@@ -43,7 +43,7 @@ body {
       padding: 0; } }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Tajawal", sans-serif;
   font-weight: 400;
   line-height: 1.7;
   color: #777; }
@@ -69,7 +69,7 @@ body {
         animation-iteration-count: 3; */ }
     @media (max-width: 37.5em) {
       .heading-primary--main {
-        letter-spacing: 1rem;
+        letter-spacing: 0;
         font-size: 5rem;
         line-height: 1.5;
         margin-bottom: 2rem; } }
@@ -81,7 +81,7 @@ body {
     animation: moveInRight 1s ease-out; }
     @media (max-width: 37.5em) {
       .heading-primary--sub {
-        letter-spacing: .5rem; } }
+        letter-spacing: 0; } }
 
 .heading-secondary {
   font-size: 3.5rem;
@@ -700,6 +700,11 @@ body {
 .form__group:not(:last-child) {
   margin-bottom: 2rem; }
 
+@media (max-width: 37.5em) {
+  .form__group--options {
+    display: flex;
+    flex-direction: column; } }
+
 .form__input {
   font-family: inherit;
   font-size: 1.5rem;
@@ -737,6 +742,9 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 37.5em) {
+    .form__radio-group {
+      margin-bottom: 1rem; } }
 
 .form__radio-input {
   display: none; }
@@ -849,6 +857,7 @@ body {
   margin-top: -20vh; }
 
 .section-features {
+  display: none;
   padding: 20rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/sphinx.jpeg);
   background-size: cover;

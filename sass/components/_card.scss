@@ -6,9 +6,14 @@
     position: relative;
     height: 52rem;
 
+    @include respond(phone) {
+        height: 40rem;
+        margin-bottom: 10rem;
+    }
+
     &__side {
         font-size: 2rem;
-        height: 52rem;
+        // height: 52rem;
         width: 100%;
         transition: all .8s ease;
         position: absolute;
@@ -59,19 +64,28 @@
         border-top-right-radius: 3px;
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), 
-                                // url(../img/nat-5.jpg);
-                                url(../img/sphinx-2.jpg);
+            // background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/sphinx-2.jpg);
+            background-image: url(../img/hotel-1.jpg);
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), 
-                                // url(../img/nat-6.jpg);
-                                url(../img/khan-2.jpg);
+            // background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark), url(../img/khan-2.jpg);
+            background-image: url(../img/hotel-2.jpg);
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), 
-                                // url(../img/nat-7.jpg);
-                                url(../img/nile.jpg);
+            // background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark), url(../img/nile.jpg);
+            background-image: url(../img/hotel-3.jpg);
+        }
+        &--4 {
+            background-image: url(../img/pyramids-2.jpeg);
+        }
+        &--5 {
+            background-image: url(../img/citadel.jpg);
+        }
+        &--6 {
+            background-image: url(../img/khan.jpg);
+        }
+        &--7 {
+            background-image: url(../img/sphinx.jpeg);
         }
     }
 

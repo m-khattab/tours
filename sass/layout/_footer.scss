@@ -4,12 +4,13 @@
     padding: 10rem 0;
     font-size: 1.4rem;
 
-    @include respond(phone) {
-        padding: 5rem 0;
-    }
-
     @include respond(tab) {
         padding: 8rem 0;
+    }
+
+    @include respond(phone) {
+        margin-top: 5rem;
+        padding: 3rem 0;
     }
 
     &__logo-box {

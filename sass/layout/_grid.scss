@@ -8,6 +8,10 @@
         @include respond(tab) {
             margin-bottom: $gutter-vertical-small;
         }
+
+        @include respond(phone) {
+            margin-bottom: 1rem;
+        }
     }
 
     @include respond(tab) {
@@ -27,6 +31,10 @@
             @include respond(tab) {
                 margin-right: 0;
                 margin-bottom: $gutter-vertical-small;
+            }
+
+            @include respond(phone) {
+                margin-bottom: 0;
             }
         }
 

@@ -304,6 +304,9 @@ body {
     @media (max-width: 56.25em) {
       .row:not(:last-child) {
         margin-bottom: 6rem; } }
+    @media (max-width: 37.5em) {
+      .row:not(:last-child) {
+        margin-bottom: 1rem; } }
   @media (max-width: 56.25em) {
     .row {
       max-width: 50rem;
@@ -321,6 +324,9 @@ body {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0;
           margin-bottom: 6rem; } }
+      @media (max-width: 37.5em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin-bottom: 0; } }
     @media (max-width: 56.25em) {
       .row [class^="col-"] {
         width: 100% !important; } }
@@ -373,12 +379,13 @@ body {
   background-color: #333;
   padding: 10rem 0;
   font-size: 1.4rem; }
-  @media (max-width: 37.5em) {
-    .footer {
-      padding: 5rem 0; } }
   @media (max-width: 56.25em) {
     .footer {
       padding: 8rem 0; } }
+  @media (max-width: 37.5em) {
+    .footer {
+      margin-top: 5rem;
+      padding: 3rem 0; } }
   .footer__logo-box {
     text-align: center;
     margin-bottom: 8rem; }
@@ -505,9 +512,12 @@ body {
   -moz-perspective: 150rem;
   position: relative;
   height: 52rem; }
+  @media (max-width: 37.5em) {
+    .card {
+      height: 40rem;
+      margin-bottom: 10rem; } }
   .card__side {
     font-size: 2rem;
-    height: 52rem;
     width: 100%;
     transition: all .8s ease;
     position: absolute;
@@ -536,11 +546,19 @@ body {
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
     .card__picture--1 {
-      background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/sphinx-2.jpg); }
+      background-image: url(../img/hotel-1.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/khan-2.jpg); }
+      background-image: url(../img/hotel-2.jpg); }
     .card__picture--3 {
-      background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nile.jpg); }
+      background-image: url(../img/hotel-3.jpg); }
+    .card__picture--4 {
+      background-image: url(../img/pyramids-2.jpeg); }
+    .card__picture--5 {
+      background-image: url(../img/citadel.jpg); }
+    .card__picture--6 {
+      background-image: url(../img/khan.jpg); }
+    .card__picture--7 {
+      background-image: url(../img/sphinx.jpeg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -593,6 +611,9 @@ body {
 
 .composition {
   position: relative; }
+  @media (max-width: 37.5em) {
+    .composition {
+      margin-top: 5rem; } }
   .composition__photo {
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
@@ -853,7 +874,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 25rem 0;
+  padding: 25rem 1rem;
   margin-top: -20vh; }
 
 .section-features {
@@ -870,6 +891,10 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+  @media (max-width: 37.5em) {
+    .section-tours {
+      padding-top: 20rem;
+      padding-bottom: 0; } }
 
 .section-stories {
   display: none;
@@ -877,6 +902,7 @@ body {
   position: relative; }
 
 .section-booking {
+  display: none;
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
 

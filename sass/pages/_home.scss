@@ -11,7 +11,8 @@
             to right bottom, 
             rgba($color-primary-light, .8), 
             rgba($color-primary-dark, .8)),
-        url(../img/nat-4.jpg);
+        // url(../img/nat-4.jpg);
+        url(../img/sphinx.jpeg);
     background-size: cover;
 
     margin-top: -10rem;
@@ -29,6 +30,8 @@
 }
 
 .section-stories {
+    display: none;
+
     padding: 15rem 0;
     position: relative;
 }
@@ -43,7 +46,8 @@
                                       rgba($color-white, .9) 0%,
                                       $color-white 50%,
                                      transparent 50%),
-                                      url(../img/nat-10.jpg);
+                                    // url(../img/nat-10.jpg);
+                                    url(../img/nile.jpg);
     background-size: cover;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
@@ -53,5 +57,10 @@
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include respond(phone) {
+            width: 100%;
+            padding: 4rem;
+        }
     }
 }

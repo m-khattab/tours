@@ -12,6 +12,11 @@ body {
     backface-visibility: hidden;
     margin-bottom: 60px;
 
+    @include respond(phone) {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+    }
+
     &--main {
         display: block;
         font-size: 6rem;
@@ -25,6 +30,8 @@ body {
         @include respond(phone) {
             letter-spacing: 1rem;
             font-size: 5rem;
+            line-height: 1.5;
+            margin-bottom: 2rem;
         }
     
         /* animation-delay: 2s;

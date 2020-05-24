@@ -4,7 +4,8 @@
             to right bottom, 
             rgba($color-primary-light, .8), 
             rgba($color-primary-dark, .8)),
-        url(../img/hero-small.jpg);
+        // url(../img/hero-small.jpg);
+        url(../img/pyramids-2.jpeg);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -18,7 +19,8 @@
             to right bottom, 
             rgba($color-primary-light, .8), 
             rgba($color-primary-dark, .8)),
-        url(../img/hero.jpg);
+        // url(../img/hero.jpg);
+        url(../img/pyramids-2.jpeg);
     }
 
     @include respond(phone) {
@@ -42,5 +44,9 @@
         left: 50%;
         transform: translate(-50%,-50%);
         text-align: center;
+
+        @include respond(phone) {
+            width: 80%;
+        }
     }
 }

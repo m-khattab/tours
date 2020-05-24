@@ -373,8 +373,21 @@ body {
     @media (max-width: 37.5em) {
       .header__text-box {
         width: 80%; } }
+  .header__tel {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center; }
+    .header__tel p {
+      color: #fff;
+      font-size: 3rem;
+      direction: rtl;
+      letter-spacing: 3px; }
 
 .footer {
+  position: relative;
   color: #f7f7f7;
   background-color: #333;
   padding: 10rem 0;
@@ -434,6 +447,14 @@ body {
         float: none; } }
     .footer__copyright .footer__link {
       text-transform: initial; }
+  .footer__tel {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .footer__tel p {
+      font-size: 2rem;
+      letter-spacing: 2px; }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;

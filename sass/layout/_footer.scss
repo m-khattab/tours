@@ -1,4 +1,6 @@
 .footer {
+    position: relative;
+
     color: $color-gray-light-1;
     background-color: $color-gray-dark-3;
     padding: 10rem 0;
@@ -89,6 +91,19 @@
 
         .footer__link {
             text-transform: initial;
+        }
+    }
+
+
+    &__tel {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        p {
+            font-size: 2rem;
+            letter-spacing: 2px;
         }
     }
 }
